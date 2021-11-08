@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>UserStory - 1</title>
+      <link rel="stylesheet" href="pageswitch.css" />
+   </head>
+   <body>
+      <header>
+        <div class="navbar">
+         <nav>
+            <div class="logo">
+                <img src="..\photos\radha.jfif" width="150px" height="110px">
+            </div>
+            <div class="search">
+               <div class="icon">
+            <div class="input">
+         <input type="text" placeholder="Explor.............." id="mysearch">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value = ' '"></span>
+      </div>
+   </div>
+            <!--------------------------------------Tabs------------------------------------------>
+            <ul class="tabs">
+               <li class="tab is-active">
+                  <a data-switcher data-tab="1">Home</a>
+               </li>
+               <li class="tab">
+                  <a data-switcher data-tab="2">All Categories</a>
+               </li>
+               <li class="tab">
+                  <a data-switcher data-tab="3">My cart</a>
+               </li>
+            </ul>
+         </nav>
+     <a href="../PageSwitcher/SelectedItems.html">
+      <img src="..\photos\cart.png" width="30px" height="30px"> </a>
+     <a href="logout.html"><img src="C:\Users\madhu\Desktop\JS\Demo2\photos\logout-icon.jpg" width="60px" height="60px"> 
+      
+         <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\menu.png" class="menu-icon" onclick="menutoggle()">
+ <!-- <script>document.write(localStorage.getItem('product[uname]'))</script> -->
+      </div>
+
+      </header>
+      <main>
+         <section class="pages">
+            <div class="main-container" data-page="1">
+            <div class="page is-active" data-page="1">
+               <!--------------Account-page------------>
+               <div class="row">
+                  <div class="col-2">
+                     <h1> Give your workout A new Style!</h1>
+                     <p>It is believed that Krishna enchants the world, but Radha enchants even him.<br>
+                        Therefore, she is the supreme goddess of all and together they are called as Radha-Krishna.
+                     </p>
+                     <a href="C:/Users/madhu/Desktop/JS/Demo1/Website/Products.html" target="_blank" class ="btn">Explore Now &#8594; </a>
+                  </div>
+                  <div class="col-2">
+                     <img src="..\photos\image1.png"> 
+                  </div>
+                  <!----------------featured categories------------>
+                  <div class="categories">
+                     <div class="small-container">
+                        <div class="row">
+                           <div class="col-3">
+                              <img src="..\photos\category-1.jpg">
+                           </div>
+                           <div class="col-3">
+                              <img src="..\photos\category-2.jpg">
+                           </div>
+                           <div class="col-3">
+                              <img src="..\photos\category-3.jpg">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--------------featured products------------->
+                  <div class="small-container">
+                     <h2 class= "title">Featured Products</h2>
+                     <div class="row">
+                        <div class="col-4">
+                     <a href="../Products-Detail.html"><img src="..\photos\product-1.jpg"> </a>
+                           <h4>Red Printed T-shirt</h4>
+                           <p>₹1050.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-2.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                           <p>₹1050.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-3.jpg">
+                           <p>₹1580.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-4.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                           <p>₹1500.00</p>
+                        </div>
+                     </div>
+                     <h2 class="title">Latest Products</h2>
+                     <div class="row">
+                        <div class="col-4">
+                           <img src="..\photos\product-5.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                           <p>₹1580.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-6.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                        <p>₹1850.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-7.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                           <p>₹1080.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-8.jpg">
+                           <h4>Red Printed T-shirt</h4>
+ 
+                           <p>$50.00</p>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-4">
+                           <img src="..\photos\product-9.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                 
+                           <p>₹1050.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-10.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                    
+                           <p>₹1250.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-11.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                   
+                           <p>₹1200.00</p>
+                        </div>
+                        <div class="col-4">
+                           <img src="..\photos\product-12.jpg">
+                           <h4>Red Printed T-shirt</h4>
+                          
+                           <p>₹1550.00</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!-------------offer-------->
+                  <div class="offer">
+                     <div class="small-container">
+                        <div class="row">
+                           <div class="col-2">
+                              <img src="..\photos\exclusive.png" class="offer-img">
+                           </div>
+                           <div class="col-2">
+                              <p>Exclusively Available</p>
+                              <h1>Smart Band 4</h1>
+                              <small>“Many of life’s failures are people who did not realize how close they were to success when they gave up.”</small>>
+                              <a href="../PageSwitcher/SelectedItems.html" target="_self" class="btn">Buy Now &#8594;</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!---------------Testimonial------------>
+                  <div class="testimonial">
+                     <div class="small-container">
+                        <div class="row">
+                           <div class="col-3">
+                              <i class="fa fa-quote-left"></i>
+                              <p>“Money and success don’t change people;
+                                 they merely amplify what is already there.”
+                              </p>
+                     
+                              <img src="..\photos\user-1.png">
+                              <h3>Sean Parker</h3>
+                           </div>
+                           <div class="col-3">
+                              <i class="fas fa-quote-left"></i>
+                              <p>“The whole secret of a successful life is to find out what is one’s destiny to do, and then do it.”</p>
+                       
+                              <img src="..\photos\user-2.png">
+                              <h3>Mike Smith</h3>
+                           </div>
+                           <div class="col-3">
+                              <i class="fas fa-quote-left"></i>
+                              <p> “Curiosity about life in all of its aspects, I think, is still the secret of great creative people.”</p>
+            
+                              <img src="..\photos\user-3.png">
+                              <h3>Mabel Joe</h3>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!---------------brands-->
+                  <div class="brands">
+                     <div class="small-contaimer">
+                        <div class="row">
+                           <div class="col-5">
+                              <img src="..\photos\logo-godrej.png">
+                           </div>
+                           <div class="col-5">
+                              <img src="..\photos\logo-oppo.png">
+                           </div>
+                           <div class="col-5">
+                              <img src="..\photos\logo-coca-cola.png">
+                           </div>
+                           <div class="col-5">
+                              <img src="..\photos\logo-paypal.png">
+                           </div>
+                           <div class="col-5">
+                              <img src="..\photos\logo-philips.png">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </div>
+      </div>
+                </div>
+            <div class="page" data-page="2">
+                <div class="small-container">
+                    <div class="row row-2">
+                        <h2>All Products</h2>
+                        <select>
+                            <option>Default shorting </option>
+                            <option>Short By price</option>
+                            <option>Short By popularity </option>
+                            <option>Short By rating </option>
+                            <option>Short By Sale </option>
+                        </select>
+                    </div>
+            
+                   <div class="row">
+                    <div class="col-4">
+                        <img src="..\photos\product-1.jpg">
+                        <h4>Red Printed T-shirt</h4>
+                 
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-2.jpg">
+                        <h4>Red Printed T-shirt</h4>
+       
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-3.jpg">
+                        <h4>Red Printed T-shirt</h4>
+   
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-4.jpg">
+                        <h4>Red Printed T-shirt</h4>
+       
+                        <p>₹1050.00</p>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-4">
+                        <img src="..\photos\product-5.jpg">
+                        <h4>Red Printed T-shirt</h4>
+    
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-6.jpg">
+                        <h4>Red Printed T-shirt</h4>
+      
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-7.jpg">
+                        <h4>Red Printed T-shirt</h4>
+   
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-8.jpg">
+                        <h4>Red Printed T-shirt</h4>
+                     
+                        <p>₹1050.00</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="..\photos\product-9.jpg">
+                        <h4>Red Printed T-shirt</h4>
+            
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-10.jpg">
+                        <h4>Red Printed T-shirt</h4>
+                   
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-11.jpg">
+                        <h4>Red Printed T-shirt</h4>
+          
+                        <p>₹1050.00</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="..\photos\product-12.jpg">
+                        <h4>Red Printed T-shirt</h4>
+          
+                        <p>₹1550.00</p>
+                    </div>
+            </div>
+                        <div class="page-btn">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span> &#8594; </span>
+                        </div>
+            </div>
+            </div>
+            <div class="page" data-page="3">
+                 <!-----------------Single Product details----------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="..\photos\gallery-1.jpg" width="100%" id="ProductImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="..\photos\gallery-1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="..\photos\gallery-2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="..\photos\gallery-3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="..\photos\gallery-4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+               <p>Home / T-shirt</p>
+               <h1>Red Printed T-shirt by HRX</h1>
+               <h4>₹1050.00</h4>
+               <select>
+               <option>Select Size</option>
+               <option>XXL</option>
+               <option>XL</option>
+               <option>Large</option>
+               <option>Medium</option>
+               <option>Small</option>
+               </select>
+               <input type="number" value="1">
+               <a href="../PageSwitcher/SelectedItems.html" class="btn">Add To Cart</a>
+               <h3>Product Details</h3>
+               <br>
+               <p>“The real man smiles in trouble, gathers strength from distress, and grows brave by reflection.”</p>
+            </div>
+        </div>
+    </div>
+<!-------------Title------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+                <p><b><u>View More</u></b></p>
+            </div>
+
+    </div>
+<!--------------Products--------->
+    <div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="..\photos\product-9.jpg">
+            <h4>Red Printed T-shirt</h4>
+       
+            <p>₹1050.00</p>
+    </div>
+        <div class="col-4">
+            <img src="..\photos\product-10.jpg">
+            <h4>Red Printed T-shirt</h4>
+          
+            <p>₹1050.00</p>
+        </div>
+        <div class="col-4">
+            <img src="..\photos\product-11.jpg">
+            <h4>Red Printed T-shirt</h4>
+          
+            <p>₹1050.00</p>
+        </div>
+        <div class="col-4">
+            <img src="..\photos\product-12.jpg">
+            <h4>Red Printed T-shirt</h4>
+    
+            <p>₹1050.00</p>
+        </div>
+</div>
+</div>
+            </div>
+  
+</section>
+      </main>
+      <!---------------footer------->
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="footer-col-1">
+                  <h3>Download Our App</h3>
+                  <p>“Don’t settle for what life gives you; make life better and build something.”</p>
+                  <div class="app-logo">
+                     <img src="..\photos\play-store.png">
+                     <img src="..\photos\app-store.png">
+                  </div>
+               </div>
+               <div class="footer-col-2">
+                  <img src="..\photos\radha.jfif">
+                  <p> “The way I see it, if you want the rainbow, you gotta put up with the rain.</p>
+               </div>
+               <div class="footer-col-3">
+                  <h3>Useful Links</h3>
+                  <ul>
+                     <li>Coupons</li>
+                     <li>Blog Post</li>
+                     <li>Return Policy</li>
+                     <li>Join Affliate</li>
+                  </ul>
+               </div>
+               <div class="footer-col-4">
+                  <h3>Follow us</h3>
+                  <ul>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>YouTube</li>
+                  </ul>
+               </div>
+            </div>
+            <hr>
+         </div>
+      </div>
+      <script src="pageswitch.js"></script>
+       <script>
+          var codeAns = localStorage.getItem("code");
+         if(codeAns =="secret"){
+}else{
+    window.location.href="Registration.html"
+}
+      </script> 
+   </body>
+</html>

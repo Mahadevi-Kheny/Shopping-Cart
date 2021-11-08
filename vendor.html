@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="subcontainer">
+    <header>
+         <div class="logo">
+             <div class="rowx">
+                <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\radha.jfif" width="150px" height="110px">
+                <!-- <script>document.write(localStorage.getItem('uName'))</script> -->
+            </div>
+            <div class="rowx">
+                <a href="logout.html"><img src="C:\Users\madhu\Desktop\JS\Demo2\photos\logout-icon.jpg" width="60px" height="60px">  
+            </div>
+            
+    </header>
+    </div>
+    <br>
+    <div class="subcontainer">
+
+    <form action="Add products" method="POST" class="form-control" onsubmit="return addProductFromVendor();">
+        <h1>Register New Products with all details: </h1>
+       <div>
+                <ul>
+                    <li>
+                        <label for="pImage">Add product Image</label>
+                        <div class="form-input">
+                            <label for="pImage">Upload Image</label>
+                            <input type="file" id="pImage" accept="image/*"
+                            onchange="showPreview(event);" hidden>
+                            <div class="preview">
+                                <img id="pImage-preview"src="" alt="">
+                            </div>
+                        </div>
+                 
+                    </li>
+                    <li>
+                        <label for="pName">Name of the product</label>
+                        <input type="text" name="pName" id="pName" placeholder="Enter product Name" >
+                 
+                    </li>
+                    <li>
+                        <label for="pPrice">Price of the product</label>
+                        <input type="text" name="pPrice" id="pPrice" placeholder="Enter Price">
+                       
+                    </li>
+                </ul>
+                       <button id = "btnadd" onclick="pAdded()" >ADD</button><button id = "btndel">DELETE</button>
+                       <p id="pAdd"></p>
+                      
+       </div>
+    </form>
+    
+
+    </div>
+</div>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+<!---------------footer----------------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>“Don’t settle for what life gives you; make life better and build something.”</p>
+                <div class="app-logo">
+                    <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\play-store.png">
+                    <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\radha.jfif">
+                <p> “The way I see it, if you want the rainbow, you gotta put up with the rain.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+                 <li>Join Affliate</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>YouTube</li>
+                </ul>
+             </div>
+        </div>
+        <hr>    
+    </div>
+</div> 
+<script src="app.js">
+</script>
+<script>
+    var codeAns = localStorage.getItem("code");
+   if(codeAns =="secret"){
+}else{
+window.location.href="Registration.html"
+}
+</script>
+</body>
+</html>

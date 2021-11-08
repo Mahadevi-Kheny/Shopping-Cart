@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Single Page App</title>
+    <link href="app.css" rel="stylesheet" type="text/css">
+   
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form id="registerForm" method="POST" name="registration" class="form-control" onsubmit="return validateForm();">
+                <div>
+                    <h1>CREATE AN ACCOUNT</h1>
+                <ul>
+                    <li>
+                        <label for="uName">Name</label>
+                        <input type="text" name="uName" id="uName" placeholder="Enter your name." onkeypress ="firstnameValidation()" maxlength="20"  max="20" min="2">
+                        <br><span id="firstname"></span>
+                    </li>
+                    <li>
+                        <label for="mName">MiddleName</label>
+                        <input type="text" name="mName" id="mName" placeholder="Middlename" onkeypress ="middlenameValidation()" maxlength="20" min="2" max="20">
+                    </li>
+                    <li>
+                        <label for="lName">LasteName</label>
+                        <input type="text" name="lName" id="lName" placeholder="Lastname" onkeypress ="lastnameValidation()" maxlength="20" min="2" max="20">
+                        <br><span id="lastname"></span>
+                    </li>
+                    <li>
+                        <label for="ugender">Gender</label>
+                        <select name="ugender" id="ugender">
+                           <option value="female">Female</option>
+                           <option value="male">Male</option>
+                        </select>
+
+                    </li>
+                    <li>
+                        <label for="uEmail">Email</label>
+                        <input type="email" name="Email" id="uEmail" placeholder="Enter your email id." oninput="emailExist(this)" maxlength="50" min="2" max="50" required>
+                    </li>
+                    <li>
+                        <label for="uPassword">Password</label>
+                        <input type="password" name="Password" id="uPassword" placeholder="Enter your password." maxlength="16" min="8" max="16" pattern=".{0}|.{6,}" required>
+                    </li>
+                    <li>
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" name="Confirm Password" id="confirmPassword" placeholder="Confirm Password." maxlength="16" min="8" max="16" oninput="verifyPassword(this)" required>
+                    </li>
+                    <li>
+                        <label for="urole">Role <br>
+                            User<input type="radio" name="uRole" id="uRole" value="U">  <br>
+                            Vender &nbsp;&nbsp; <input type="radio" name="uRole" id="uRole" value="V"><br>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="uContactno">Contact No.</label>
+                        <input type="phone" name="Contact No" id="uContactno" placeholder="Enter your contact number.">
+                    </li>
+                    <li>
+                        <label for="uaddress">Address</label>
+                        <input type="address" placeholder = "Address" id="uaddress" name="uaddress" maxlength="150"/>
+                    </li>
+                    <li>
+                        <label for="ucity">City</label>
+                        <input type="city" placeholder = "city" id="ucity" name="ucity"/>
+                    </li>
+                    <li>
+                        <label for="ustate">State</label>
+                        <input type="state" placeholder = "State" id="ustate" name="ustate"/>
+                    </li>
+                    <li>
+                        <label for="uZipcode">Zip-Code</label>
+                        <input type="Zip-code" placeholder ="Zip-Code" id="uZipcode" name= "uZipcode" maxlength="6"/>
+                    </li>
+                    <li>
+                        <label for="uCountry">Country</label>
+                        <input type="Country" placeholder ="Country" id="uCountry" name="uCountry" value="India" readonly/>
+                    </li>
+                    <li>
+                        <label for="usecurity_question" class="security">Security question</label>
+                        <select name="usecurity_question" id="usecurity_question">
+                        <option value="Which is your favourite Sports">Which is your favourite Sports</option>
+                        <option value="Who is your best friend">Who is your best friend</option>
+                        <option value="Which is your favourite Hobby">Which is your favourite Hobby </option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="usecretAns" class="answer">Your Answer</label>
+                        <input type="secret answer" placeholder ="Your answer" id="usecretAns" name="usecretAns" maxlength="10" />
+                    </li>
+                    <li>
+                        <button type="submit" id="submit">Submit</button>
+                        <span>Already have an account? <a href="javascript:void(0);" onclick="showHide('logIn', 'registerForm')">Log in now</a></span>
+                    </li>
+                </ul>
+                </div>
+            </form>
+            <form id="thankYou" class="form-control" style="display: none;">
+                <div style="text-align: center">
+                    <h1>Thank You!</h1>
+                    <p>You have sucsessfully registerd with us. You can <a href="javascript:void(0);" onclick="showHide('logIn', 'thankYou')">Log in now</a></p>
+                </div>
+            </form>
+            <form name="login" id="logIn" method="POST" class="form-control" onsubmit="return loginUser()" style="display: none;">
+                <div>
+                        <h1>LOG IN</h1>
+                <ul>
+                    <li>
+                        <label for="uemailId">Email Id</label>
+                        <input type="email" name="uemailId" id="uemailId" placeholder="Enter your email id" required>
+                    </li>
+                    <li>
+                            <label for="ePassword">Password</label>
+                            <input type="password" name="ePassword" id="ePassword" placeholder="Enter your password" required>
+                        </li>
+                        <li>
+                                <button type="submit" id="login">Log In</button>
+                                <span>New around here? <a href="javascript:void(0);" onclick="showHide('registerForm','logIn')">Register now</a></span>
+                            </li>
+                            <p id="errShow"></p>
+                </ul>
+            </div>
+            </form>
+        </div>
+    </main>
+
+    <!---------------footer----------------->
+<div class="footer">
+    <div class="footcontainer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>“Don’t settle for what life gives you; make life better and build something.”</p>
+                <div class="app-logo">
+                    <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\play-store.png">
+                    <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+               <img src="C:\Users\madhu\Desktop\JS\Demo2\photos\radha.jfif" width="80%">
+                <p> “The way I see it, if you want the rainbow, you gotta put up with the rain.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+                 <li>Join Affliate</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                 <li>Facebook</li>
+                 <li>Twitter</li>
+                 <li>Instagram</li>
+                 <li>YouTube</li>
+                </ul>
+             </div>
+        </div>
+        <hr>    
+    </div>
+</div> 
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
